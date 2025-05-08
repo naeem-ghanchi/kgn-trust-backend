@@ -28,10 +28,10 @@
     "sequelize": "^6.28.2",
     "uuid": "^9.0.0",
     "yup": "^1.0.0",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "sucrase": "^3.23.0"
   },
   "devDependencies": {
-    "sequelize-cli": "^6.6.2",
-    "sucrase": "^3.23.0"
+    "sequelize-cli": "^6.6.2"
   }
 }
