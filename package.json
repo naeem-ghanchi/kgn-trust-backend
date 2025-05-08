@@ -6,6 +6,7 @@
   "author": "gadfaria <gadfaria@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "create": "sequelize-cli db:create",
     "drop": "sequelize-cli db:drop",
