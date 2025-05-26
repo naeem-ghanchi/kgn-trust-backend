@@ -9,25 +9,17 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      name: {
+      gallaUserId: {
+        type: Sequelize.INTEGER,
         allowNull: false,
-        type: Sequelize.STRING,
+        references: {        
+          model: 'galla_users',
+          key: 'id'
+        }
       },
-      address: {
+      amount: {
+        type: Sequelize.INTEGER,
         allowNull: false,
-        type: Sequelize.STRING,
-      },
-      city: {
-        allowNull: false,
-        type: Sequelize.STRING,
-      },
-      pincode: {
-        allowNull: false,
-        type: Sequelize.STRING,
-      },
-      mobile: {
-        allowNull: false,
-        type: Sequelize.STRING,
       },
       createdBy: {
         type: Sequelize.INTEGER,
