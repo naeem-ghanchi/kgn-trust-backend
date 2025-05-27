@@ -50,7 +50,6 @@ let gallaUserController = {
       // Search condition
       const whereCondition = {
         [Op.or]: [
-          { id: { [Op.iLike]: `%${search}%` } },
           { name: { [Op.iLike]: `%${search}%` } },
           { mobile: { [Op.iLike]: `%${search}%` } }
         ]
