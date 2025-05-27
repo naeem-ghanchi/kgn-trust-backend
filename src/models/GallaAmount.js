@@ -7,6 +7,7 @@ class GallaAmount extends Model {
       {
         amount: Sequelize.INTEGER,
         gallaUserId: Sequelize.INTEGER,
+        galladate: Sequelize.STRING,
         createdBy: Sequelize.STRING,
       },
       {
