@@ -59,13 +59,18 @@ let gallaAmountController = {
         offset
       });
 
+      // Fetch total amount (regardless of pagination)
+      const totalAmount = await GallaAmount.sum('amount', { where: whereClause });
+
+
       return res.status(200).json({
         data: rows,
         pagination: {
         total: count,
         page,
         limit,
-        totalPages: Math.ceil(count / limit)
+        totalPages: Math.ceil(count / limit),
+        totalAmount: totalAmount || 0
       }
       });
     } catch (error) {
