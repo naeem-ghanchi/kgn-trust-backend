@@ -35,7 +35,7 @@ let gallaAmountController = {
       const limit = parseInt(req.query.limit) || 10;
       const search = req.query.search || '';
       const userId = req.query.userId || '0';
-      const sortBy = req.query.sortBy || 'amount';
+      const sortBy = req.query.sortBy || 'galladate';
       const sortOrder = req.query.sortOrder === 'asc' ? 'ASC' : 'DESC';
 
       const offset = (page - 1) * limit;
